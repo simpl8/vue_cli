@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "C:\\Users\\guobanglu\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "yapf",
+    "python.linting.flake8Args": ["--max-line-length=130"],
+    "python.linting.pylintEnabled": false,
+    "python.autoComplete.extraPaths": [
+        "C:\\Users\\guobanglu\\AppData\\Local\\Programs\\Python\\Python38\\Lib\\site-packages",
+    ]
+
+}

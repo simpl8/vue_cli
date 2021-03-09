@@ -24,7 +24,7 @@ export default {
 <style type="text/css" scoped> /* scoped 属性让样式只在当前组件内生效 */
 .users {
   position: fixed;
-  top: 30px;
+  top: 50px;
   left: 0;
   width: 100%;
   height: 100%;

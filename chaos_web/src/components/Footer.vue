@@ -7,8 +7,8 @@
 export default {
   data() {
     return {
-     copyRight: "Copyright@2021 simple-owner",
-     time: '2020-03-07'
+     copyRight: "Copyright @2021 simple-owner",
+    
     }
   },
   computed: {
@@ -27,15 +27,11 @@ export default {
   width: 100%;
   background:dimgrey;
   padding: 2mm;
+  text-align: center;
 }
 label {
   text-align: center;
   color: rgb(218, 207, 218);
 }
-label.time {
-  position: fixed;
-  color: aliceblue;
-  right: 0%
-}
-  
+
 </style>

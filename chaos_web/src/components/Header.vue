@@ -1,8 +1,18 @@
 <template>
   <div class="header">
     <div class="userInfo">
-      <label class="userInfo" for="userInfo">hello-@{{ userName }}</label>
-      <label class="logOut" for="logOut">logOut</label>
+        <ul>
+            <li class="tag">
+                <a href="http://wwww.baidu.com">书单</a></li>
+            <li  class="tag">工具</li>
+            <li  class="tag">基金在线</li>
+            <li  class="tag">学习</li>
+            <li  class="tag">标签一</li>
+            <li  class="tag">标签二</li>
+            <li class="info" @click="logOut">logOut</li>
+            <li class="info" @click="getUserInfo">hello-@{{ userName }}</li>
+            
+        </ul>
     </div>
     
   </div>
@@ -12,8 +22,18 @@ export default {
   data() {
     return {
      userName: "simple"
+    
 
     }
+  },
+  methods: {
+      getUserInfo() {
+          console.log("查看个人信息")
+      },
+
+      logOut() {
+          alert("确认要退出吗")
+      }
   }
   
 }
@@ -22,17 +42,33 @@ export default {
   .header {
     position: fixed;
     left: 0%;
-    right: 0;
+    right: 0%;
     top: 0;
-    height: 20px;
+    height: 50px;
     width: 100%;
-    background:rgb(160, 157, 157);
-    padding: 10px
+    background:rgb(160, 141, 126);
   }
-  .userInfo, .logOut{
-    margin-right: 10px;
-    color:gold;
-    text-align: right;
-    cursor: pointer;
+  .userInfo {
+      top: 0%;
+      text-align: right;
+  }
+  ul {
+      height: 10px
+  }
+  li.info {
+      display: inline;
+      float: right;
+      list-style-type: none;
+      color: rgb(214, 236, 12);
+      padding: 0px 6px 0px;
+      cursor: pointer; 
+  }
+  li.tag {
+      display: inline;
+      float: left;
+      list-style-type: none;
+      color:rgb(231, 235, 14);
+      padding: 0px 4px 0px;
+      cursor: pointer; 
   }
 </style>
