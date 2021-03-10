@@ -71,4 +71,8 @@ export default {
       padding: 0px 4px 0px;
       cursor: pointer; 
   }
+  a {
+    color: rgb(231, 235, 14);
+    text-decoration: none;
+  }
 </style>
