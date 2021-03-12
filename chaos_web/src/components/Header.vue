@@ -1,78 +1,57 @@
 <template>
   <div class="header">
-    <div class="userInfo">
-        <ul>
-            <li class="tag">
-                <a href="http://wwww.baidu.com">书单</a></li>
-            <li  class="tag">工具</li>
-            <li  class="tag">基金在线</li>
-            <li  class="tag">学习</li>
-            <li  class="tag">标签一</li>
-            <li  class="tag">标签二</li>
-            <li class="info" @click="logOut">logOut</li>
-            <li class="info" @click="getUserInfo">hello-@{{ userName }}</li>
-            
-        </ul>
+    <div class="logo">
+      <img class="go_logo" src="../assets/goo.png">
     </div>
-    
+    <div class="tool_bar">
+      <router-link id="insure" class="nav_bar" to="/insure">出单</router-link>
+      <router-link id="interface" class="nav_bar" to="/interface">接口</router-link>
+    </div>
   </div>
 </template>
+
 <script>
 export default {
-  data() {
-    return {
-     userName: "simple"
-    
-
-    }
-  },
-  methods: {
-      getUserInfo() {
-          console.log("查看个人信息")
-      },
-
-      logOut() {
-          alert("确认要退出吗")
-      }
-  }
-  
+  name: "Header"
 }
 </script>
+
 <style type="text/css" scoped> /* scoped 属性让样式只在当前组件内生效 */
   .header {
     position: fixed;
     left: 0%;
     right: 0%;
-    top: 0;
-    height: 50px;
+    top: 0px;
+    height: 60px;
     width: 100%;
-    background:rgb(160, 141, 126);
+    /*background:rgb(240, 248, 232);*/
   }
-  .userInfo {
-      top: 0%;
-      text-align: right;
+  .logo {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 34px;
+    width: 100%;
+    background: rgb(240, 248, 232);
   }
-  ul {
-      height: 10px
+  .go_logo {
+    position: relative;
+    left: 1%
   }
-  li.info {
-      display: inline;
-      float: right;
-      list-style-type: none;
-      color: rgb(214, 236, 12);
-      padding: 0px 6px 0px;
-      cursor: pointer; 
-  }
-  li.tag {
-      display: inline;
-      float: left;
-      list-style-type: none;
-      color:rgb(231, 235, 14);
-      padding: 0px 4px 0px;
-      cursor: pointer; 
-  }
-  a {
-    color: rgb(231, 235, 14);
+  a.nav_bar {
+    position: relative;
+    top: 6px;
+    left: 20%;
+    font-family: 华文楷体;
+    font-weight: 600;
+    font-size: 22px;
+    color: #00bdf7;
     text-decoration: none;
+    padding: 10px;
+    
   }
+  #interface {
+    color: orange
+  }
+ 
 </style>

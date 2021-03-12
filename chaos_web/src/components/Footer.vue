@@ -8,7 +8,6 @@ export default {
   data() {
     return {
      copyRight: "Copyright @2021 simple-owner",
-    
     }
   },
   computed: {
@@ -25,13 +24,13 @@ export default {
   bottom: 0%;
   height: 20px;
   width: 100%;
-  background:dimgrey;
+  background:rgb(226, 243, 233);
   padding: 2mm;
   text-align: center;
 }
 label {
   text-align: center;
-  color: rgb(218, 207, 218);
+  color: rgb(73, 71, 73);
 }
 
 </style>
